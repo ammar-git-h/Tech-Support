@@ -15,6 +15,12 @@
     background: linear-gradient(135deg,#6d92e8 0%, #8CC4FF 100%);
 }
 
+/* This is the blue gradient color enabled for table headers */
+.table-bgbluegradient th {
+    background: #8CC4FF;
+    background: linear-gradient(135deg,#6d92e8 0%, #8CC4FF 100%);
+}
+
 /* this is the gray gradient color. used for the header and footer*/
 .bg-graygradient {
     background: #404040;
@@ -33,6 +39,11 @@
     background: linear-gradient(135deg,#3c97d8 0%, #70bdf3 100%);
 }
 
+.table-bluegradient th {
+    background: #51ACED;
+    background: linear-gradient(135deg,#3c97d8 0%, #70bdf3 100%);
+}
+
 /* this is the yellow gradient color. used for yellow buttons (replacing bg-warning)*/
 .bg-yellowgradient {
     background: #e1cc78;
@@ -41,6 +52,12 @@
 
 /* this is the white gradient color. used for cards (replacing bg-light)*/
 .bg-whitegradient {
+    background: #D1FFF4;
+    background: linear-gradient(135deg,#D1FFF4 0%, #FAFAF2 100%);
+}
+
+/* This is the white griadient color enabled for table bodys */
+.table-whitegradient td {
     background: #D1FFF4;
     background: linear-gradient(135deg,#D1FFF4 0%, #FAFAF2 100%);
 }
