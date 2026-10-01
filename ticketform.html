@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Don't forget to rename the title based on your page-->
-    <title>Home Page</title>
-    <!-- Link all three stylesheets in this order-->
+    <title>Ticket Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<!--Remember to read comments in styles.css to get a better understanding of the colors used!!!!!!!!!!!-->
-
 <body class="bg-bluepinkgradient">
-    <!-- Copy the header-->
     <header class="bg-graygradient text-white py-4 text-center">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -41,50 +35,51 @@
             <article class="col-sm-12 col-md-12 col-lg-12 mb-2">
                 <div class="card h-100 bg-whitegradient shadow-lg">
                     <div class="card-body">
-                        <h1 class="card-title text-center"><i class="bi bi-house"></i> Campus Tech Support Ticketing</h1>
-                        <h5 class="card-text text-center">On this website, you can submit tickets for technical issues you are experiencing. An IT will review the ticket and respond as soon as possible.</h5>
+                        <h1 class="card-title text-center"><i class="bi bi-ticket"></i> Ticket Submission Form</h1>
+                        <h5 class="card-text text-center">Fill out each field to submit your ticket</h5>
                     </div>
                 </div>
             </article>
-            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
+            <article class="col-sm-12 col-md-12 col-lg-12 mb-2">
                 <div class="card h-100 bg-whitegradient shadow-lg">
                     <div class="card-body">
-                        <h1 class="card-title"><i class="bi bi-ticket"></i> Submit a ticket</h1>
-                        <h5 class="card-text">If you are experiencing issues, submit a ticket to inform IT for resolving</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fs-3">Your Coventry ID</label>
+                                <input type="text" class="form-control" id="covId" placeholder="Enter your Coventry ID" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fs-3">Location of issue</label>
+                                <select class="form-control mb-3" id="buildingNumber" required>
+                                    <option value="" disabled selected>Select building</option>
+                                    <option value="A">Building A</option>
+                                    <option value="B">Building B</option>
+                                    <option value="C">Building C</option>
+                                    <option value="Eng">Engineering Building</option>
+                                </select>
+                                <input type="text" class="form-control" id="roomNumber" placeholder="Enter room number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="issueType" class="form-label fs-3">Type of issue</label>
+                                <select class="form-control mb-3" id="issueType" required>
+                                    <option value="" disabled selected>Select issue type</option>
+                                    <option value="hardware">Hardware</option>
+                                    <option value="software">Software</option>
+                                    <option value="network">Network</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="issue" class="form-label fs-3">Issue description</label>
+                                <textarea class="form-control" id="issue" rows="4" placeholder="Describe the issue you are experiencing" required></textarea>
+                            </div>
+                            <button type="submit" class="btn bg-greengradient border-secondary w-100 h-100 fs-3"><i class="bi bi-pen"></i> Submit Ticket</button>
+                        </form>
                     </div>
                 </div>
-            </article>
-            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
-                <button type="button" class="btn bg-greengradient shadow-lg h-100 w-100 fs-3 border-secondary" onclick="window.location.href='ticketform.html'"><i class="bi bi-pen"></i> Submit Ticket</button>
-            </article>
-
-            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
-                <div class="card h-100 bg-whitegradient shadow-lg">
-                    <div class="card-body">
-                        <h1 class="card-title"><i class="bi bi-check-circle"></i> Already submitted?</h1>
-                        <h5 class="card-text">Check your ticket status</h5>
-                    </div>
-                </div>
-            </article>
-            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
-                <button type="button" class="btn bg-bluegradient shadow-lg h-100 w-100 fs-3 border-secondary" onclick="window.location.href='ticketstatus.html'"><i class="bi bi-question-circle"></i> Ticket Status</button>
-            </article>
-
-            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
-                <div class="card h-100 bg-whitegradient shadow-lg">
-                    <div class="card-body">
-                        <h3 class="card-title"><i class="bi bi-database"></i> Admin?</h3>
-                        <h5 class="card-text">Log in to view dashboard</h5>
-                    </div>
-                </div>
-            </article>
-            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
-                <button type="button" class="btn bg-yellowgradient shadow-lg h-100 w-100 fs-3 border-secondary" onclick="window.location.href='dashboard.html'"><i class="bi bi-box-arrow-in-right"></i> Log in</button>
-            </article>
         </div>
     </main>
-    
-    <!-- Copy the footer-->
+
     <footer class="bg-graygradient text-white py-4 text-center">
         <article>
             <div>
@@ -95,8 +90,6 @@
             </div>
         </article>
     </footer>
-
-    <!-- Copy the JavaScript for Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

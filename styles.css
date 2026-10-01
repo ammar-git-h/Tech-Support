@@ -1,3 +1,46 @@
+/* this is a solid light blue color. previously used for old background color */
 .bg-lightblue {
     background-color:#8edafd
+}
+
+/* this is the blue-pink gradient color. used for background*/
+.bg-bluepinkgradient {
+    background: #8EDAFD;
+    background: linear-gradient(135deg,#85dcff 0%, #CF99F7 100%);
+}
+
+/* this is the blue gradient color. used for background*/
+.bg-bgbluegradient {
+    background: #8CC4FF;
+    background: linear-gradient(135deg,#1A53D9 0%, #8CC4FF 100%);
+}
+
+/* this is the gray gradient color. used for the header and footer*/
+.bg-graygradient {
+    background: #404040;
+    background: linear-gradient(135deg,#404040 0%, #adadad 100%);
+}
+
+/* this is the green gradient color. used for green buttons (replacing bg-success)*/
+.bg-greengradient {
+    background: #149C34;
+    background: linear-gradient(135deg,#149C34 0%, #80FF9D 100%);
+}
+
+/* this is the blue gradient color. used for blue buttons (replacing bg-info)*/
+.bg-bluegradient {
+    background: #51ACED;
+    background: linear-gradient(135deg,#51ACED 0%, #36FFEB 100%);
+}
+
+/* this is the yellow gradient color. used for yellow buttons (replacing bg-warning)*/
+.bg-yellowgradient {
+    background: #F1C40F;
+    background: linear-gradient(135deg,#F1C40F 0%, #F8FF70 100%);
+}
+
+/* this is the white gradient color. used for cards (replacing bg-light)*/
+.bg-whitegradient {
+    background: #D1FFF4;
+    background: linear-gradient(135deg,#D1FFF4 0%, #FAFAF2 100%);
 }
