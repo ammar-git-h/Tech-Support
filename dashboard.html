@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
@@ -32,34 +32,38 @@
             </nav>
     </header>
 
-    <main>  
+    <main class="container mt-3 py-3">  
 
-        <table class="table table-hover table-bordered border-secondary">
-            <thead class="table-bgbluegradient">
-                <tr>
-                    <th scope="col">Student ID</th>
-                    <th scope="col">Student Name</th>
-                    <th scope="col">Department</th>
-                    <th scope="col">Device Type</th>
-                    <th scope="col">OS Version</th>
-                    <th scope="col">Issue</th>
-                    <th scope="col">Tech Name</th>
-                    <th scope="col">Status</th>
-                </tr>
-            </thead>
-            <tbody class="table-whitegradient">
-                <tr>
-                    <td>1</td>
-                    <td>John Doe</td>
-                    <td>john's department</td>
-                    <td>john's device</td>
-                    <td>Windows 10</td>
-                    <td>Computer not turning on</td>
-                    <td>Jane Smith</td>
-                    <td>Pending</td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- table-responsive stops the table from overflowing off the screen -->
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered border-secondary">
+                <thead class="table-bgbluegradient">
+                    <tr>
+                        <!-- The scope=col don't really matter much, but they helps with accessibility -->
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Student Name</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Device Type</th>
+                        <th scope="col">OS Version</th>
+                        <th scope="col">Issue</th>
+                        <th scope="col">Tech Name</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="table-whitegradient">
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john's department</td>
+                        <td>john's device</td>
+                        <td>Windows 10</td>
+                        <td>Computer not turning on</td>
+                        <td>Jane Smith</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </main>
 
