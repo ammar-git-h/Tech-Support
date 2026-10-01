@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Detail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-bluepinkgradient">
+
+    <header class="bg-graygradient text-white py-4 text-center">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand h2 fw-bold text-white" href="#">Campus Tech Support Ticketing</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navBar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="bi bi-house"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="ticketform.html"><i class="bi bi-ticket"></i> Submit Ticket</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="ticketstatus.html"><i class="bi bi-check-circle"></i> Ticket Status</a></li>
+                        <li class="nav-item"><a class="nav-link active text-white" href="dashboard.html"><i class="bi bi-database"></i> IT Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4 py-5">
+        <div class="row g-3">
+
+            <article class="col-sm-12 col-md-12 col-lg-12 mb-2">
+                <div class="card h-100 bg-whitegradient shadow-lg">
+                    <div class="card-body">
+                        <h1 class="card-title"><i class="bi bi-ticket-detailed"></i> Ticket #TCK-00123</h1>
+                        <h5 class="card-text">Printer not responding in Lab B204</h5>
+                        <span class="badge bg-yellowgradient text-dark fs-6">Open</span>
+                        <span class="badge bg-secondary fs-6">Priority: High</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
+                <div class="card h-100 bg-whitegradient shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-chat-left-text"></i> Issue</h3>
+                        <h5 class="card-text">The printer will not respond when sending print jobs. Restarting did not help.</h5>
+                        <p class="mb-1"><strong>Type:</strong> Hardware</p>
+                        <p class="mb-1"><strong>Location:</strong> Building B, Room 204</p>
+                        <p class="mb-1"><strong>Submitted:</strong> 2026-09-28</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
+                <div class="card h-100 bg-whitegradient shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-pc-display"></i> Device Details</h3>
+                        <p class="mb-1"><strong>Type:</strong> Network Printer</p>
+                        <p class="mb-1"><strong>Model:</strong> HP LaserJet Pro M404dn</p>
+                        <p class="mb-1"><strong>OS:</strong> Firmware 20240612</p>
+                        <p class="mb-1"><strong>Department:</strong> Engineering</p>
+                        <p class="mb-1"><strong>User ID:</strong> COV-1234567</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
+                <div class="card h-100 bg-whitegradient shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-person-badge"></i> Assigned Technician</h3>
+                        <p class="mb-1"><strong>Name:</strong> Jane Doe</p>
+                        <p class="mb-1"><strong>Department:</strong> IT Support</p>
+                        <p class="mb-1"><strong>Contact:</strong> jane.doe@kh.edu</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-12 col-md-6 col-lg-6 mb-2">
+                <div class="card h-100 bg-whitegradient shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-gear"></i> Actions</h3>
+                        <label class="form-label fs-5">Change status</label>
+                        <select class="form-control mb-3">
+                            <option>Open</option>
+                            <option>In Progress</option>
+                            <option>Resolved</option>
+                            <option>Closed</option>
+                        </select>
+                        <button type="button" class="btn bg-greengradient border-secondary w-100 fs-5">
+                            <i class="bi bi-check2-circle"></i> Update Ticket
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-12 col-md-12 col-lg-12 mb-2">
+                <a href="dashboard.html" class="btn bg-bluegradient border-secondary fs-5">
+                    <i class="bi bi-arrow-left"></i> Back to Dashboard
+                </a>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bg-graygradient text-white py-4 text-center">
+        <article>
+            <div>
+                <img src="tkh.png" alt="The Knowledge Hub" width="198.5" height="77.5" class="mb-3">
+            </div>
+            <div>
+                <h5>Incase website is down, or if you are experiencing issues, visit the IT department for quick assistance.</h5>
+            </div>
+        </article>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
