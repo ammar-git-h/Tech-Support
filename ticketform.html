@@ -49,7 +49,7 @@
                                 <input type="text" class="form-control" id="covId" placeholder="Enter your Coventry ID" required>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label fs-3">Location of issue</label>
+                                <label for="location" class="form-label fs-3">Location of issue</label>
                                 <select class="form-control mb-3" id="buildingNumber" required>
                                     <option value="" disabled selected>Select building</option>
                                     <option value="A">Building A</option>
@@ -70,7 +70,40 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="issue" class="form-label fs-3">Issue description</label>
+                                <label for="priority" class="form-label fs-3">Urgency</label>
+                                <select class="form-control mb-3" id="priority" required>
+                                    <option value="" disabled selected>Select urgency</option>
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="department" class="form-label fs-3">Department</label>
+                                <input type="text" class="form-control" id="department" placeholder="Enter your department" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="deviceType" class="form-label fs-3">Device type</label>
+                                <select class="form-control mb-3" id="deviceType" required>
+                                    <option value="" disabled selected>Select device type</option>
+                                    <option value="desktop">Desktop</option>
+                                    <option value="laptop">Laptop</option>
+                                    <option value="printer">Printer</option>
+                                    <option value="projector">Projector</option>
+                                    <option value="network">Network Device</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="deviceModel" class="form-label fs-3">Device model</label>
+                                <input type="text" class="form-control" id="deviceModel" placeholder="Enter device model (if applicable)">
+                            </div>
+                            <div class="mb-3">
+                                <label for="operatingSystem" class="form-label fs-3">Operating system</label>
+                                <input type="text" class="form-control" id="operatingSystem" placeholder="Enter operating system (if applicable)">
+                            </div>
+                            <div class="mb-3">
+                                <label for="issueDescription" class="form-label fs-3">Issue description</label>
                                 <textarea class="form-control" id="issue" rows="4" placeholder="Describe the issue you are experiencing" required></textarea>
                             </div>
                             <button type="submit" class="btn bg-greengradient border-secondary w-100 h-100 fs-3"><i class="bi bi-pen"></i> Submit Ticket</button>
