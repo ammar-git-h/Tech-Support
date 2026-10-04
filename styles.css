@@ -3,13 +3,13 @@
     background-color:#d2f0ff
 }
 
-/* this is the blue-pink gradient color. used for background*/
+/* this is the blue-pink gradient color. currently not used*/
 .bg-bluepinkgradient {
     background: #85dcff;
     background: linear-gradient(135deg,#85dcff 0%, #CF99F7 100%);
 }
 
-/* this is the blue gradient color. used for background*/
+/* this is the blue gradient color. currently not used*/
 .bg-bgbluegradient {
     background: #8CC4FF;
     background: linear-gradient(135deg,#6d92e8 0%, #8CC4FF 100%);
