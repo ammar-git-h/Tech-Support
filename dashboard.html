@@ -49,11 +49,12 @@
             </article>
         </div>
 
-        <!-- Search bar -->
+        <!-- Search bar that filters the table -->
         <div class="mb-3">
             <!-- Label for accessibility -->
             <label for="tableSearch" class="form-label visually-hidden">Search tickets</label>
             
+            <!-- Search bar -->
             <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-search"></i></span>
                 <input type="search" id="tableSearch" class="form-control"
@@ -134,7 +135,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+
+    <!-- Javascript for the search bar -->
     <script>
         const searchInput = document.getElementById("tableSearch");
         const tableBody = document.getElementById("ticketTableBody");
@@ -151,7 +153,6 @@
                 if (match) visibleCount++;
         });
 
-        // Show or hide the "no results" message
         let noRow = document.getElementById("noResultsRow");
         if (visibleCount === 0) {
             if (!noRow) {
