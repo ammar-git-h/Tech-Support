@@ -39,7 +39,7 @@
     background: linear-gradient(135deg,#3c97d8 0%, #70bdf3 100%);
 }
 
-.table-bluegradient th {
+.table-header th {
     background: #51ACED;
     background: linear-gradient(135deg,#3c97d8 0%, #70bdf3 100%);
 }
@@ -57,7 +57,7 @@
 }
 
 /* This is the white griadient color enabled for table bodys */
-.table-whitegradient td {
+.table-body td {
     background: #D1FFF4;
     background: linear-gradient(135deg,#D1FFF4 0%, #FAFAF2 100%);
 }
