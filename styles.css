@@ -61,3 +61,18 @@
     background: #D1FFF4;
     background: linear-gradient(135deg,#D1FFF4 0%, #FAFAF2 100%);
 }
+
+
+
+
+/* Stops the navbar brand from overflowing on smaller screens while keeping the hamburger button in place. */
+.navbar-brand {
+    flex: 1 1 0;
+
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        flex: 0 1 auto;
+    }
+}
