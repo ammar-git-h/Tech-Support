@@ -37,14 +37,23 @@
 
     <main class="container mt-3 py-2">  
 
-        <h1 class="text-center mb-4">IT Dashboard</h1>
+        <div class="row g-3">
+            <article class="col-sm-12 col-md-12 col-lg-12 mb-3">
+                <div class="card h-100 bg-brandcard shadow-lg">
+                    <div class="card-body">
+                        <h1 class="card-title text-center mb-3"><i class="bi bi-database"></i> IT Dashboard</h1>
+                        <h5 class="card-text text-center"> Click specific tickets to view their details and update their status.</h5>
+                    </div>
+                </div>
+            </article>
+        </div>
 
         <!-- table-responsive stops the table from overflowing off the screen -->
         <div  class="table-responsive">
             <table class="table table-hover table-bordered border-secondary">
                 <thead class="table-header">
                     <tr>
-                        <!-- The scope=col don't really matter much, but they helps with accessibility -->
+                        <!-- The scope=col doesn't really matter much, but it helps with accessibility -->
                         <th scope="col">Status</th>
                         <th scope="col">Tech Name</th>
                         <th scope="col">Issue</th>
@@ -58,7 +67,18 @@
                 <tbody class="table-body">
                     <tr>
                         <td>Pending</td>
-                        <td>Jane Smith</td>
+                        <td>Jane Shalaby</td>
+                        <td>Computer crashes</td>
+                        <td>Jane's department</td>
+                        <td>Jane's device</td>
+                        <td>Linux</td>
+                        <td>Jane Doe</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Assigned</td>
+                        <td>John Smith</td>
                         <td>Computer not turning on</td>
                         <td>John's department</td>
                         <td>John's device</td>
@@ -66,6 +86,18 @@
                         <td>John Doe</td>
                         <td>1</td>
                     </tr>
+
+                    <tr>
+                        <td>Completed</td>
+                        <td>Hamada</td>
+                        <td>Computer exploded</td>
+                        <td>Hamada's department</td>
+                        <td>Hamada's device</td>
+                        <td>Windows 11</td>
+                        <td>Hamada Doe</td>
+                        <td>3</td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
