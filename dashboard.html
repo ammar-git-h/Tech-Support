@@ -136,37 +136,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <!-- Javascript for the search bar -->
-    <script>
-        const searchInput = document.getElementById("tableSearch");
-        const tableBody = document.getElementById("ticketTableBody");
-
-        searchInput.addEventListener("input", function () {
-            const query = searchInput.value.toLowerCase().trim();
-            const rows = tableBody.querySelectorAll("tr:not(#noResultsRow)");
-            let visibleCount = 0;
-
-            rows.forEach(function (row) {
-                const text = row.textContent.toLowerCase();
-                const match = text.includes(query);
-                row.classList.toggle("d-none", !match);
-                if (match) visibleCount++;
-        });
-
-        let noRow = document.getElementById("noResultsRow");
-        if (visibleCount === 0) {
-            if (!noRow) {
-                noRow = document.createElement("tr");
-                noRow.id = "noResultsRow";
-                noRow.innerHTML = '<td colspan="8" class="text-center text-muted">No matching tickets found.</td>';
-                tableBody.appendChild(noRow);
-            }
-        } else if (noRow) {
-            noRow.remove();
-        }
-        
-    });
-    </script>
+    
 
 </body>
 </html>
